@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -6,6 +10,21 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+h1 {
+  font-size: 160px;
+  font-weight: 900;
+  line-height: 1;
+}
+h2 {
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 1;
+}
+h3 {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -13,4 +32,66 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.spinner {
+  border: 1px solid white;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 0.1rem #fff, 0 0 0.1rem #fff, 0 0 1rem #bc13fe,
+    0 0 0.4rem #bc13fe, 0 0 2rem #bc13fe, inset 0 0 1rem #bc13fe;
+}
+.gmail {
+  transform: rotate(180deg);
+}
+.telegram {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+}
+.twitter {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+}
+.instagram {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+.linkedin {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.arrow {
+  width: 140%;
+  margin-top: 50px;
+}
+
+.line {
+  margin-top: 15px;
+  width: calc(100% - 20px);
+  background: rgba(256, 256, 256, 0.2);
+  height: 1px;
+  float: left;
+}
+
+.point {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid rgba(256, 256, 256, 0.2);
+  float: right;
 }
