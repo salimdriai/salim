@@ -17,7 +17,7 @@ const ProjectCard = ({ src, title, description, link }) => {
         </h5>
         <p className="text-sm">{description}</p>
         <div className="card-actions justify-end">
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" rel="noreferrer">
             <button className="btn btn-sm btn-link">Link</button>
           </a>
           <button className="btn btn-sm btn-ghost">Learn more</button>

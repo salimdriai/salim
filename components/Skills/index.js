@@ -116,9 +116,8 @@ const Skills = () => {
       <div ref={parallax.ref} className="flex justify-center">
         <div className="stats bg-base-300 my-10">
           {tools.map(({ label, src, percentage, text }) => (
-            <div className="stat">
+            <div key={label} className="stat">
               <SkillCard
-                key={label}
                 label={label}
                 src={src}
                 percentage={percentage}

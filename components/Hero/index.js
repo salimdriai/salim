@@ -44,7 +44,7 @@ const Hero = () => {
           </div>
           <div ref={parallax.ref}>
             <p className="text-2xl font-bold">Hello there !</p>
-            <h1 className="font-bold">I'm Salim.</h1>
+            <h1 className="font-bold">I&apos;m Salim.</h1>
             <p className="py-4">
               A passionate, ambitious & self taught software developer, with
               commercial background ( 7 years ). <br />

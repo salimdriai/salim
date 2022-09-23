@@ -36,7 +36,7 @@ const Projects = () => {
         <h2 className="text-center">
           Projects{' '}
           <span className="font-thin" style={{ fontSize: 32 }}>
-            i'm proud to be part of.
+            i&apos;m proud to be part of.
           </span>
         </h2>
         <div
