@@ -8,7 +8,7 @@ const Contact = () => {
           <h1 className="text-5xl font-bold">Get in toutch !</h1>
           <p className="py-6">
             You have an offer for me ? you have an idea in mind ? or whatever
-            you need ! let's get a coffee and do the business !
+            you need ! lets get a coffee and do the business !
           </p>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
