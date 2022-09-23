@@ -62,9 +62,9 @@ const Skills = () => {
   })
 
   return (
-    <div className="container mx-auto min-h-screen sticky -top-96 -z-50">
-      <div className="py-16 md:flex">
-        <div className="flex-1 ">
+    <div className="container mx-auto min-h-screen sticky -top-1/2 md:-top-96 -z-50">
+      <div className=" py-8 md:py-16 md:flex">
+        <div className=" ">
           <h2 className="text-secondary">
             Skills{' '}
             <span className="font-thin" style={{ fontSize: 32 }}>
@@ -100,7 +100,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="flex-1 ">
-          <div className="flex flex-wrap lg:justify-end">
+          <div className="flex flex-wrap justify-center md:justify-end">
             {skills.map(({ label, src, percentage, text }) => (
               <SkillCard
                 key={label}
@@ -113,8 +113,8 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div ref={parallax.ref} className="flex justify-center">
-        <div className="stats bg-base-300 my-10">
+      <div ref={parallax.ref} className="flex justify-center mb-4">
+        <div className="stats bg-base-300 md:my-10">
           {tools.map(({ label, src, percentage, text }) => (
             <div key={label} className="stat">
               <SkillCard

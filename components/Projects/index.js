@@ -32,8 +32,8 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen bg-base-300">
-      <div className="container mx-auto py-24 relative">
-        <h2 className="text-center">
+      <div className="container mx-auto  relative">
+        <h2 className="text-center pt-24">
           Projects{' '}
           <span className="font-thin" style={{ fontSize: 32 }}>
             i&apos;m proud to be part of.
@@ -41,7 +41,7 @@ const Projects = () => {
         </h2>
         <div
           ref={parallax.ref}
-          className=" my-16 flex  flex-col md:flex-row items-center justify-center gap-16"
+          className="my-8 md:my-16 flex  flex-col md:flex-row items-center justify-center gap-16"
         >
           {projects.map(({ title, description, src, link }) => (
             <ProjectCard

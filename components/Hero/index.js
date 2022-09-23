@@ -26,23 +26,24 @@ const Component = () => {
 }
 
 const Hero = () => {
-  const parallax = useParallax({
+  /* const parallax = useParallax({
     translateX: [-30, 40],
-  })
+  }) */
   return (
     <div
+      className="hero"
       style={{
         backgroundImage: `url("/blured.png")`,
         backgroundPositionX: '900px',
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="hero min-h-screen container mx-auto">
-        <div className="hero-content flex-col lg:flex-row p-0 mt-24">
-          <div>
+      <div className="hero  min-h-screen container mx-auto">
+        <div className="hero-content flex-col lg:flex-row p-0 md:mt-24">
+          <div className="mb-16 md:mb-0">
             <Component />
           </div>
-          <div ref={parallax.ref}>
+          <div /* ref={parallax.ref} */>
             <p className="text-2xl font-bold">Hello there !</p>
             <h1 className="font-bold">I&apos;m Salim.</h1>
             <p className="py-4">
