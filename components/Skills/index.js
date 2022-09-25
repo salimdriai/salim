@@ -105,7 +105,7 @@ const Skills = () => {
             ></progress>
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex items-center">
           <div className="flex flex-wrap gap-4 justify-center md:justify-end ">
             {skills.map(({ label, src, percentage, text }) => (
               <SkillCard
