@@ -9,6 +9,7 @@ const projects = [
       'A secret NFT auction platform built on secret network blockchain.',
     src: '/logo-acti.png',
     link: 'https://www.test.actilist.co',
+    role: 'full stack dev',
   },
   {
     title: 'Eland',
@@ -16,6 +17,7 @@ const projects = [
       'Multi users property management platform built with Next.js & Typescrpit.',
     src: '/eland-logo-04.png',
     link: 'https://www.eland.pk',
+    role: 'front end dev',
   },
   {
     title: 'Enviroblocks',
@@ -23,6 +25,7 @@ const projects = [
       'Gaming web application on top of the WAX blockchain built with React.',
     src: '/enviro-logo.png',
     link: 'https://www.enviroblocks.io',
+    role: 'front end dev',
   },
 ]
 const Projects = () => {
@@ -43,13 +46,14 @@ const Projects = () => {
           ref={parallax.ref}
           className="my-8 md:my-16 flex  flex-col md:flex-row items-center justify-center gap-16"
         >
-          {projects.map(({ title, description, src, link }) => (
+          {projects.map(({ title, description, src, link, role }) => (
             <ProjectCard
               key={title}
               title={title}
               description={description}
               src={src}
               link={link}
+              role={role}
             />
           ))}
         </div>

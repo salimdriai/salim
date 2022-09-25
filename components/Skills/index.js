@@ -24,7 +24,7 @@ const skills = [
   {
     label: 'Node.js',
     src: '/icons8-nodejs.svg',
-    percentage: 65,
+    percentage: 70,
     text: 'Something i love',
   },
   {
@@ -32,6 +32,12 @@ const skills = [
     src: '/icons8-cpp.svg',
     percentage: 50,
     text: 'To solve challenges',
+  },
+  {
+    label: 'Web3',
+    src: '/icons8-ethereum.svg',
+    percentage: 50,
+    text: 'Used to blockchain',
   },
 ]
 
@@ -113,7 +119,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div ref={parallax.ref} className="flex md:justify-center mb-4">
+      <div ref={parallax.ref} className="hidden md:flex md:justify-center mb-4">
         <div className="stats bg-base-300 md:my-10">
           {tools.map(({ label, src, percentage, text }) => (
             <div key={label} className="stat">
