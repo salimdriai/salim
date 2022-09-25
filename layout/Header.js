@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div
       style={{ zIndex: 10000 }}
-      className="  py-8 fixed right-0 left-0  backdrop-blur-2xl	"
+      className="py-4 md:py-8 fixed right-0 left-0  backdrop-blur-2xl	"
     >
       <div className=" flex justify-between items-center container mx-auto">
         <Link href="/">
@@ -61,14 +61,14 @@ const Header = () => {
         </div>
       </div>
       <div
-        className="flex flex-col  lg:hidden pt-10 items-center gap-8 flex-1 z-9"
+        className="flex flex-col  lg:hidden  items-center gap-8 flex-1 z-9"
         style={{
           height: mobileMenuOpen ? '50vh' : '0vh',
           transition: 'all 250ms linear',
           transform: `translateY(${mobileMenuOpen ? '0vh' : '-50vh'})`,
         }}
       >
-        <ul className="text-center text-xl">
+        <ul className="text-center text-xl mt-8">
           <li className="hover:text-primary my-2">
             <Link href="/blog">Blog</Link>
           </li>

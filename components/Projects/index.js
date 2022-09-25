@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParallax } from 'react-scroll-parallax'
-import ProjectCard from '../ProjectCard'
+import ProjectCard from './Card'
 
 const projects = [
   {
