@@ -58,13 +58,13 @@ const tools = [
 
 const Skills = () => {
   const parallax = useParallax({
-    scale: [1.2, 0.5],
+    scale: [1, 0.5],
   })
 
   return (
     <div className="container mx-auto min-h-screen sticky -top-1/2 md:-top-96 -z-50">
-      <div className=" py-8 md:py-16 md:flex">
-        <div className=" ">
+      <div className="py-8 md:py-16 md:flex">
+        <div>
           <h2 className="text-secondary">
             Skills{' '}
             <span className="font-thin" style={{ fontSize: 32 }}>
@@ -99,8 +99,8 @@ const Skills = () => {
             ></progress>
           </div>
         </div>
-        <div className="flex-1 ">
-          <div className="flex flex-wrap justify-center md:justify-end">
+        <div className="flex-1">
+          <div className="flex flex-wrap gap-4 justify-center md:justify-end ">
             {skills.map(({ label, src, percentage, text }) => (
               <SkillCard
                 key={label}
@@ -113,7 +113,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div ref={parallax.ref} className="flex justify-center mb-4">
+      <div ref={parallax.ref} className="flex md:justify-center mb-4">
         <div className="stats bg-base-300 md:my-10">
           {tools.map(({ label, src, percentage, text }) => (
             <div key={label} className="stat">

@@ -17,16 +17,13 @@ const Footer = () => {
       </div>
       <div>
         <div className="grid grid-flow-col gap-4">
-          <Link href="https://www.twitter.com">
+          <Link href="https://twitter.com/DriaiSalim">
             <img src="/twitter.svg" width={40} />
           </Link>
-          <Link href="https://www.whatsapp.com">
-            <img src="/whatsapp.svg" width={40} />
-          </Link>
-          <Link href="https://www.linkedin.com">
+          <Link href="https://www.linkedin.com/in/salim-driai-b850091b3/">
             <img src="/linkedin.svg" width={40} />
           </Link>
-          <Link href="https://www.instagram.com">
+          <Link href="https://www.instagram.com/driai.salim.93/">
             <img src="/instagram.svg" width={40} />
           </Link>
         </div>

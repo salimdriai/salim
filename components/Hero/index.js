@@ -1,56 +1,40 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParallax } from 'react-scroll-parallax'
 
-const Component = () => {
-  const parallax = useParallax({
-    rotate: [0, 360],
-  })
-  return (
-    <div ref={parallax.ref} className="spinner">
-      <img className="gmail" src="/gmail.svg" width={40} height={40} />
-
-      <div className="telegram">
-        <img src="/whatsapp.svg" width={40} height={40} />
-      </div>
-      <div className="twitter">
-        <img src="/twitter.svg" width={40} height={40} />
-      </div>
-      <div className="instagram">
-        <img src="/instagram.svg" width={40} height={40} />
-      </div>
-      <div className="linkedin">
-        <img src="/linkedin.svg" width={40} height={40} />
-      </div>
-    </div>
-  )
-}
-
 const Hero = () => {
-  /* const parallax = useParallax({
-    translateX: [-30, 40],
-  }) */
+  const [windowSize, setWindowSize] = useState(null)
+  const parallax = useParallax({
+    scale: windowSize > 700 ? [0.8, 2] : [0.6, 1],
+    speed: -20,
+  })
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize(window.innerWidth)
+    }
+    window.addEventListener('resize', handleResize)
+    handleResize()
+    // Remove event listener on cleanup
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   return (
     <div
-      className="hero"
+      className="hero min-h-screen bg-base-200"
       style={{
         backgroundImage: `url("/blured.png")`,
-        backgroundPositionX: '900px',
+        backgroundPosition: '-590px 30px',
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="hero  min-h-screen container mx-auto">
-        <div className="hero-content flex-col lg:flex-row p-0 md:mt-24">
-          <div className="mb-16 md:mb-0">
-            <Component />
-          </div>
-          <div /* ref={parallax.ref} */>
-            <p className="text-2xl font-bold">Hello there !</p>
-            <h1 className="font-bold">I&apos;m Salim.</h1>
-            <p className="py-4">
-              A passionate, ambitious & self taught software developer, with
-              commercial background ( 7 years ). <br />
-            </p>
-          </div>
+      <div className="hero-content flex-col lg:flex-row">
+        <img ref={parallax.ref} src="/space.svg" className="max-w-sm " />
+        <div>
+          <p className="text-2xl font-bold">Hi there !</p>
+          <h1 className="font-bold">I&apos;m Salim.</h1>
+          <p className="py-4 text-center">
+            A passionate, ambitious & self taught software developer.
+          </p>
         </div>
       </div>
     </div>

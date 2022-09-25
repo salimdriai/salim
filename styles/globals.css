@@ -14,11 +14,25 @@ h1 {
   font-size: 160px;
   font-weight: 900;
   line-height: 1;
+  background: -webkit-linear-gradient(
+    180deg,
+    rgb(132, 208, 233),
+    rgb(212, 85, 212)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 h2 {
   font-size: 100px;
   font-weight: 900;
   line-height: 1;
+  background: -webkit-linear-gradient(
+    180deg,
+    rgb(212, 85, 212),
+    rgb(132, 208, 233)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 h3 {
   font-size: 50px;

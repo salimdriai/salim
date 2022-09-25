@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Hero from '../components/Hero'
-import ContactMe from '../components/ContactMe'
+import Feedbacks from '../components/Feedbacks'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import { useParallax, ParallaxProvider } from 'react-scroll-parallax'
@@ -18,6 +18,7 @@ export default function Home() {
           <Hero />
           <Skills />
           <Projects />
+          <Feedbacks />
         </ParallaxProvider>
       </main>
     </div>

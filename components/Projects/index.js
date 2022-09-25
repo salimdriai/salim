@@ -53,6 +53,38 @@ const Projects = () => {
             />
           ))}
         </div>
+        <div className="pb-10 flex justify-end">
+          <div>
+            <h3>
+              <span className="text-primary">Open source</span>{' '}
+              <span className="font-thin" style={{ fontSize: 32 }}>
+                Personal projects.{' '}
+              </span>
+            </h3>
+
+            <div className="mt-4">
+              <button className="btn btn-secondary btn-outline">
+                Githuib
+                <div className="ml-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
