@@ -22,9 +22,11 @@ const ProjectCard = ({ src, title, description, link, role }) => {
         </h5>
         <p className="text-sm">{description}</p>
         <div className="card-actions justify-end">
+            <button className="btn btn-sm btn-link">
           <a href={link} target="_blank" rel="noreferrer">
-            <button className="btn btn-sm btn-link">Link</button>
+                Link
           </a>
+            </button>
           {/*  <button className="btn btn-sm btn-ghost">Learn more</button> */}
         </div>
       </div>
