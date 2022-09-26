@@ -21,12 +21,10 @@ const ProjectCard = ({ src, title, description, link, role }) => {
           <div className="badge badge-accent">{role}</div>
         </h5>
         <p className="text-sm">{description}</p>
-        <div className="card-actions justify-end">
-            <button className="btn btn-sm btn-link">
+        <div className="card-actions justify-end" style={{ zIndex: 10 }}>
           <a href={link} target="_blank" rel="noreferrer">
-                Link
+            <button className="btn btn-sm btn-link">Link</button>
           </a>
-            </button>
           {/*  <button className="btn btn-sm btn-ghost">Learn more</button> */}
         </div>
       </div>

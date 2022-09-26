@@ -4,7 +4,7 @@ export const projects = [
     description:
       'A secret NFT auction platform built on secret network blockchain.',
     src: '/logo-acti.png',
-    link: 'https://www.test.actilist.co',
+    link: 'https://test.actilist.co/',
     role: 'full stack dev',
   },
   {
