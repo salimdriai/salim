@@ -31,7 +31,7 @@ const Hero = () => {
         <img ref={parallax.ref} src="/space.svg" className="max-w-sm " />
         <div>
           <p className="text-2xl ">Hi there !</p>
-          <h1 className="font-bold">I&apos;m Salim.</h1>
+          <h1 className="font-bold">I&apos;M Salim.</h1>
           <p className="py-4 md:text-center">
             A passionate, ambitious & self taught software developer.
           </p>

@@ -9,7 +9,7 @@ const Skills = () => {
   })
 
   return (
-    <div className="container mx-auto min-h-screen sticky -top-1/2 md:-top-96 -z-50">
+    <div className="container mx-auto min-h-screen md:sticky  md:-top-96 -z-50">
       <div className="py-8 md:py-16 md:flex">
         <div>
           <h2 className="text-secondary">
@@ -50,7 +50,7 @@ const Skills = () => {
           <div className="flex flex-wrap gap-4 justify-center md:justify-end ">
             {skills.map(({ label, src, percentage, text }) => (
               <SkillCard
-                key={label}
+                key={src}
                 label={label}
                 src={src}
                 percentage={percentage}
@@ -63,7 +63,7 @@ const Skills = () => {
       <div ref={parallax.ref} className="hidden md:flex md:justify-center mb-4">
         <div className="stats bg-base-300 md:my-10">
           {tools.map(({ label, src, percentage, text }) => (
-            <div key={label} className="stat">
+            <div key={src} className="stat">
               <SkillCard
                 label={label}
                 src={src}

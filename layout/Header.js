@@ -63,7 +63,7 @@ const Header = () => {
       <div
         className="flex flex-col  lg:hidden  items-center gap-8 flex-1 z-9"
         style={{
-          height: mobileMenuOpen ? '50vh' : '0vh',
+          height: mobileMenuOpen ? '100vh' : '0vh',
           transition: 'all 250ms linear',
           transform: `translateY(${mobileMenuOpen ? '0vh' : '-50vh'})`,
         }}
