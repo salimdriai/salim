@@ -3,7 +3,7 @@ export const skills = [
     label: 'Advanced',
     src: '/icons8-javascript.svg',
     percentage: 'JS',
-    text: 'My proffession',
+    text: 'My profession',
   },
   {
     label: 'Advanced ',
