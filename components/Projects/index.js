@@ -44,25 +44,27 @@ const Projects = () => {
 
             <div className="mt-4">
               <Link href="https://github.com/iskandar47">
-                <button className="btn btn-secondary btn-outline">
-                  Githuib
-                  <div className="ml-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                      />
-                    </svg>
-                  </div>
-                </button>
+                <a target="_blank" rel="noopener noreferrer">
+                  <button className="btn btn-secondary btn-outline">
+                    Githuib
+                    <div className="ml-4">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-6 h-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </a>
               </Link>
             </div>
           </div>

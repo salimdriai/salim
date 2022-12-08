@@ -77,7 +77,7 @@ const Header = () => {
           </li>
           <li className="flex justify-center">
             <a
-              href="https://www.github.com/iskandar47"
+              href="https://github.com/salimdriai"
               target="_blank"
               rel="noreferrer"
             >
